@@ -26,7 +26,6 @@ class Feedback extends Component {
   }
 
   onLeaveFeedback = name => {
-    console.log(name);
     this.setState(prevState => {
       return { [name]: prevState[name] + 1 };
     });
