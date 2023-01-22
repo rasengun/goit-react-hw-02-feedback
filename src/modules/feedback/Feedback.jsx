@@ -38,13 +38,13 @@ class Feedback extends Component {
 
     return (
       <div>
-        <Section title={'Please leave feedback'}>
+        <Section title="Please leave feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
             onLeaveFeedback={this.onLeaveFeedback}
           />
         </Section>
-        <Section title={'Statistics'}>
+        <Section title="Statistics">
           {!total ? (
             <Notification message="There is no feedback" />
           ) : (
